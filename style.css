@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #060000;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.galeria {
+    display: grid;
+
+    /* Línea mágica */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: rgb(107, 14, 14);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin: 15px 0 10px;
+}
+
+.item p {
+    color: #0b0000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
